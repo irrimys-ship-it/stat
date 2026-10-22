@@ -2,9 +2,9 @@
 // Свои файлы берём из сети (чтобы обновления были видны сразу), без сети — из кэша.
 // Запросы к Supabase не трогаем.
 
-const CACHE = 'ucheba-v2';
+const CACHE = 'ucheba-v3';
 const SHELL = [
-  './', 'index.html', 'manifest.webmanifest', 'icon.svg', 'css/app.css',
+  './', 'index.html', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png', 'css/app.css',
   'vendor/preact.module.js', 'vendor/hooks.module.js', 'vendor/htm.module.js', 'vendor/supabase.js',
   'js/main.js', 'js/html.js', 'js/config.js', 'js/store.js', 'js/model.js', 'js/date.js', 'js/seed.js', 'js/ui.js', 'js/notify.js',
   'js/views/today.js', 'js/views/schedule.js', 'js/views/tasks.js', 'js/views/calendar.js', 'js/views/subjects.js',
