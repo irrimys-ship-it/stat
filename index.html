@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Учёба</title>
+  <meta name="theme-color" content="#4f6bed">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="css/app.css">
+  <script>
+    // Тема ставится до отрисовки, чтобы не мигало
+    try { const t = localStorage.getItem('ui.theme'); if (t && t !== 'auto') document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <script type="importmap">
+    { "imports": {
+      "preact": "./vendor/preact.module.js",
+      "preact/hooks": "./vendor/hooks.module.js",
+      "htm": "./vendor/htm.module.js"
+    } }
+  </script>
+  <script src="vendor/supabase.js"></script>
+</head>
+<body>
+  <div id="app"><div class="boot">Загрузка…</div></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
